@@ -1,0 +1,13 @@
+<div>
+    <a class="weui-cell weui-cell_access" href="#/detail" ng-repeat="item in data">
+        <div class="weui-cell__hd"><img src="{{item.headImage}}" alt="" style="height:46px;margin-right:5px;display:block"></div>
+        <div class="weui-cell__bd">
+            <p style="font-size: 14px">{{item.name}}</p>
+            <p style="font-size: 8px;color: grey;">{{item.content}}</p>
+        </div>
+        <div class="weui-cell__ft"><span style="font-size: 12px;color: grey;">{{item.time}}</span></div>
+    </a>
+</div>
+<div>
+    <a href="javascript:;" ng-click="loadMore()" class="weui-btn weui-btn_mini weui-btn_default">加载更多</a>
+</div>

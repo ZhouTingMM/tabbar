@@ -1,0 +1,14 @@
+<div>
+    <a class="weui-cell weui-cell_access" href="javascript:;" ng-repeat="item in videos">
+        <div class="weui-cell__hd"><img src="{{item.newCover}}" alt="" style="height:46px;margin-right:5px;display:block"></div>
+        <div class="weui-cell__bd">
+            <p style="font-size: 14px">{{item.newsName}}</p>
+            <p style="font-size: 8px;color: grey;">{{item.newsId}}</p>
+        </div>
+        <div class="weui-cell__ft"><span style="font-size: 12px;color: grey;">{{item.ctime}}</span></div>
+    </a>
+</div>
+<div ng-if="isLoadMore">
+    <a href="javascript:;" ng-click="loadMore()" class="weui-btn weui-btn_mini weui-btn_default">加载更多</a>
+</div>
+<div ng-if="!isLoadMore">没有更多数据了...</div>

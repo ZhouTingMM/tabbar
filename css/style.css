@@ -1,0 +1,41 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.tab{
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: grey;
+    flex-grow:1;
+    width: inherit;
+}
+
+.tab p{
+    font-size: 14px;
+}
+
+:target{
+    color:red;
+    border: none;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0px;
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 47px;
+    overflow: auto;
+    top:0;
+}
